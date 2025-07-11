@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Font Relógio */
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* scroll-padding: 30px; */
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 70vh;
+  background: url("../assets/imgs/pexels-elevate-1267320.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: .7rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    color: #fff;
+  }
+
+  span {
+    color: #fff;
+  }
+}
+
+.container {
+
+  .apresentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    width: 100%;
+
+    h2 {
+      color: #555;
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+
+    .description {
+      text-align: center;
+      margin-bottom: 50px;
+      color: #222;
+      font-size: 1.3rem;
+    }
+
+    .links {
+      display: flex;
+      justify-content: space-between;
+      width: 800px;
+
+      a {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: #444;
+        text-decoration: none;
+        font-size: 1.4rem;
+
+        .line {
+          display: block;
+          width: 100px;
+          height: 1px;
+          background-color: #444;
+          margin-bottom: 10px;
+        }
+
+        .clock {
+          font-size: 2.4rem;
+          font-family: "Bitcount Grid Double", system-ui;
+        }
+      }
+    }
+  }
+
+  .block {
+    display: flex;
+    gap: 50px;
+    padding: 100px;
+    width: 100%;
+
+    .text {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+
+    .colorblack {
+      color: #444;
+    }
+
+    .image {
+      width: 700px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &.cafeDaManha, &.cafeDaTarde {
+      background-color: #444;
+    }
+
+    
+  }
+}
