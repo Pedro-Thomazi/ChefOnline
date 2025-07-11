@@ -16,31 +16,70 @@ html {
 
 .header {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
   width: 100%;
-  height: 70vh;
+  height: 90vh;
   background: url("../assets/imgs/pexels-elevate-1267320.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  overflow: hidden;
 
-  .title {
-    font-size: 4rem;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: .7rem;
+  div {
+    width: 500px;
   }
 
-  p {
-    font-size: 1.4rem;
-    color: #fff;
+  .texts {
+    /* backdrop-filter: blur(10px);
+    border-radius: 10px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    /* border: 1px solid #1E0600; */
+
+    .title {
+      font-size: 4.5rem;
+      font-weight: 400;
+      color: #1E0600;
+      letter-spacing: .7rem;
+    }
+
+    p {
+      text-align: center;
+      font-size: 2rem;
+      color: #1E0600;
+    }
+
+    span {
+      font-weight: bold;
+      margin-top: 50px;
+      color: #1E0600;
+    }
   }
 
-  span {
-    color: #fff;
+  .teste {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+
+    h3 {
+      margin: 10px 0;
+    }
+
+    .carrosselImages {
+      display: flex;
+      overflow: scroll;
+      gap: 5px;
+      width: 400px;
+
+      img {
+        border-radius: 10px;
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -119,10 +158,44 @@ html {
       }
     }
 
-    &.cafeDaManha, &.cafeDaTarde {
+    &.cafeDaManha,
+    &.cafeDaTarde {
       background-color: #444;
     }
 
-    
+
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px;
+  gap: 20px;
+  background-color: #444;
+
+  h2 {
+    color: #aaa;
+    font-size: 2.5rem;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    a {
+      font-size: 1.4rem;
+      display: flex;
+      gap: 9px;
+      align-items: center;
+      color: #fff;
+      transition: .5s;
+
+      &:hover {
+        color: #164db3;
+      }
+    }
   }
 }
